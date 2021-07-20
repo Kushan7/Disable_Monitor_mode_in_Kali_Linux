@@ -1,0 +1,11 @@
+How to enable wifi card internet after using monitor mode?
+
+airmon-ng stop wlan0 
+ifconfig wlan0 up 
+iwconfig 
+
+[+] The mode is managed but the internet is still not working.....This is because the Network manager is not running it is stopped.
+
+service NetworkManager start 
+
+[+] Thanks for Reading
